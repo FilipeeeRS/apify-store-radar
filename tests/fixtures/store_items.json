@@ -1,0 +1,1433 @@
+[
+ {
+  "title": "Google Maps Scraper",
+  "name": "crawler-google-places",
+  "username": "compass",
+  "stats": {
+   "totalBuilds": 4703,
+   "totalRuns": 46634761,
+   "totalUsers": 690772,
+   "lastRunStartedAt": "2026-11-10T16:23:46.816Z",
+   "totalUsers30Days": 47424,
+   "totalUsers7Days": 18268,
+   "totalUsers90Days": 89962,
+   "totalMetamorphs": 152571,
+   "publicActorRunStats30Days": {
+    "ABORTED": 27412,
+    "FAILED": 74299,
+    "SUCCEEDED": 3681196,
+    "TIMED-OUT": 46268,
+    "TOTAL": 3829175
+   },
+   "actorReviewCount": 1823,
+   "actorReviewRating": 4.70777738122512,
+   "bookmarkCount": 5264
+  },
+  "description": "Extract data from thousands of Google Maps locations and businesses, including r",
+  "categories": [
+   "LEAD_GENERATION",
+   "TRAVEL"
+  ],
+  "notice": "NONE",
+  "bookmarkCount": 5265,
+  "actorReviewRating": 4.70777738122512,
+  "actorReviewCount": 1823,
+  "badge": null,
+  "isWhiteListedForAgenticPayments": true,
+  "currentPricingInfo": {
+   "minimalMaxTotalChargeUsd": 0.5,
+   "pricingModel": "PAY_PER_EVENT",
+   "isPriceChangeNotificationSuppressed": false,
+   "pricingPerEvent": {
+    "actorChargeEvents": {
+     "place-scraped": {
+      "eventTitle": "Scraped place",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.004
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.003
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.002
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0015
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.00126
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.000756
+       }
+      },
+      "isPrimaryEvent": true
+     },
+     "filter-applied": {
+      "eventTitle": "Add-on: Filter applied",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.00075
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.000525
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.000315
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.000189
+       }
+      }
+     },
+     "place-details-scraped": {
+      "eventTitle": "Add-on: Additional place details scraped",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.002
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.002
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0015
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.00105
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.00063
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.000378
+       }
+      }
+     },
+     "contact-details-scraped": {
+      "eventTitle": "Add-on: Company contacts enrichment",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.002
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.002
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0015
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.00105
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.00063
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.000378
+       }
+      }
+     },
+     "lead-scraped": {
+      "eventTitle": "Add-on: Business leads enrichment",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.1
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.005
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.005
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.004
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.003
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.003
+       }
+      }
+     },
+     "lead-email-verified": {
+      "eventTitle": "Add-on: Email verification",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.1
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.004
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.003
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.002
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0015
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.0012
+       }
+      }
+     },
+     "social-profile-scraped": {
+      "eventTitle": "Add-on: Social media profile enrichment",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.1
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.008
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.007
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.006
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.004
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.003
+       }
+      }
+     },
+     "review-scraped": {
+      "eventTitle": "Add-on: Review scraped",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0005
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.0005
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.00037
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.00026
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0001575
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 9.45e-05
+       }
+      }
+     },
+     "image-scraped": {
+      "eventTitle": "Add-on: Image scraped",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0005
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.0005
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.00037
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.00026
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0001575
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 9.45e-05
+       }
+      }
+     },
+     "competitor-analyzed": {
+      "eventTitle": "Single Competitor AI Analysis",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.025
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.02
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.018
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.016
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.015
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.013
+       }
+      }
+     },
+     "apify-actor-start": {
+      "eventTitle": "Actor Start",
+      "isOneTimeEvent": true,
+      "eventPriceUsd": 5e-05
+     }
+    }
+   },
+   "createdAt": "2026-06-30T13:23:33.247Z",
+   "startedAt": "2026-06-30T13:23:33.247Z",
+   "apifyMarginPercentage": 0.2
+  },
+  "id": "nwua9Gu5YrADL7ZDj",
+  "url": "https://apify.com/compass/crawler-google-places"
+ },
+ {
+  "title": "Instagram Scraper",
+  "name": "instagram-scraper",
+  "username": "apify",
+  "stats": {
+   "totalBuilds": 4123,
+   "totalRuns": 229384327,
+   "totalUsers": 477140,
+   "lastRunStartedAt": "2026-11-10T17:52:18.245Z",
+   "totalMetamorphs": 228187,
+   "totalUsers30Days": 66707,
+   "totalUsers7Days": 35062,
+   "totalUsers90Days": 99158,
+   "publicActorRunStats30Days": {
+    "ABORTED": 14489,
+    "FAILED": 825,
+    "SUCCEEDED": 19017724,
+    "TIMED-OUT": 61468,
+    "TOTAL": 19094506
+   },
+   "actorReviewCount": 608,
+   "actorReviewRating": 4.673899708172672,
+   "bookmarkCount": 4529
+  },
+  "description": "Extract Instagram posts, reels, profiles, places, hashtags, carousels, and comme",
+  "categories": [
+   "SOCIAL_MEDIA"
+  ],
+  "notice": "NONE",
+  "bookmarkCount": 4529,
+  "actorReviewRating": 4.673899708172672,
+  "actorReviewCount": 608,
+  "badge": null,
+  "isWhiteListedForAgenticPayments": true,
+  "currentPricingInfo": {
+   "minimalMaxTotalChargeUsd": 0.0027,
+   "pricingModel": "PAY_PER_EVENT",
+   "isPriceChangeNotificationSuppressed": true,
+   "pricingPerEvent": {
+    "actorChargeEvents": {
+     "result": {
+      "eventTitle": "Result",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0027
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.0023
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0019
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0015
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0009
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.0005
+       }
+      },
+      "isPrimaryEvent": true
+     }
+    }
+   },
+   "createdAt": "2026-02-20T12:24:59.754Z",
+   "startedAt": "2026-02-20T12:24:59.754Z",
+   "apifyMarginPercentage": 0.2
+  },
+  "id": "shu8hvrXbJbY3Eb9W",
+  "url": "https://apify.com/apify/instagram-scraper"
+ },
+ {
+  "title": "Website Content Crawler",
+  "name": "website-content-crawler",
+  "username": "apify",
+  "stats": {
+   "totalBuilds": 1229,
+   "totalRuns": 49345562,
+   "totalUsers": 176443,
+   "totalUsers7Days": 5201,
+   "totalUsers30Days": 12194,
+   "totalUsers90Days": 23184,
+   "lastRunStartedAt": "2026-11-10T17:14:04.683Z",
+   "totalMetamorphs": 493,
+   "publicActorRunStats30Days": {
+    "ABORTED": 22507,
+    "FAILED": 4148,
+    "SUCCEEDED": 3781609,
+    "TIMED-OUT": 117298,
+    "TOTAL": 3925562
+   },
+   "actorReviewCount": 235,
+   "actorReviewRating": 4.592320421584427,
+   "bookmarkCount": 2716
+  },
+  "description": "Crawl websites and extract text content to feed AI models, LLM applications, vec",
+  "categories": [
+   "AI",
+   "DEVELOPER_TOOLS"
+  ],
+  "notice": "NONE",
+  "bookmarkCount": 2716,
+  "actorReviewRating": 4.592320421584427,
+  "actorReviewCount": 235,
+  "badge": null,
+  "isWhiteListedForAgenticPayments": false,
+  "currentPricingInfo": {
+   "pricingModel": "FREE"
+  },
+  "id": "aYG0l9s7dbB7j3gbS",
+  "url": "https://apify.com/apify/website-content-crawler"
+ },
+ {
+  "title": "TikTok Scraper",
+  "name": "tiktok-scraper",
+  "username": "clockworks",
+  "stats": {
+   "totalBuilds": 4109,
+   "totalRuns": 150877500,
+   "totalUsers": 387129,
+   "totalUsers7Days": 17380,
+   "totalUsers30Days": 35441,
+   "totalUsers90Days": 52667,
+   "lastRunStartedAt": "2026-11-10T17:03:10.833Z",
+   "totalMetamorphs": 15,
+   "publicActorRunStats30Days": {
+    "ABORTED": 11713,
+    "FAILED": 143192,
+    "SUCCEEDED": 13584605,
+    "TIMED-OUT": 90340,
+    "TOTAL": 13829850
+   },
+   "actorReviewCount": 370,
+   "actorReviewRating": 4.753586366876182,
+   "bookmarkCount": 2307
+  },
+  "description": "Extract data from TikTok videos, hashtags, and users. Use URLs or search queries",
+  "categories": [
+   "SOCIAL_MEDIA",
+   "VIDEOS"
+  ],
+  "notice": "NONE",
+  "bookmarkCount": 2307,
+  "actorReviewRating": 4.753586366876182,
+  "actorReviewCount": 370,
+  "badge": null,
+  "isWhiteListedForAgenticPayments": false,
+  "currentPricingInfo": {
+   "minimalMaxTotalChargeUsd": 0.5,
+   "pricingModel": "PAY_PER_EVENT",
+   "isPriceChangeNotificationSuppressed": false,
+   "pricingPerEvent": {
+    "actorChargeEvents": {
+     "result": {
+      "eventTitle": "Result",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0037
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.003
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0023
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0017
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.0005
+       }
+      },
+      "isPrimaryEvent": true
+     },
+     "filter-applied": {
+      "eventTitle": "Add-on: Date filter",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0013
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0008
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0006
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0003
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.00017
+       }
+      }
+     },
+     "popularity-filter-applied": {
+      "eventTitle": "Add-on: Popularity filter",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0013
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0008
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0006
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0003
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.00017
+       }
+      }
+     },
+     "follower-dataset-item": {
+      "eventTitle": "Add-on: Follower / Following",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.004
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.003
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.002
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0015
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0008
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.0005
+       }
+      }
+     },
+     "mobile-filter-sorting-applied": {
+      "eventTitle": "Add-on: Search video sorting",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0013
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0008
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0006
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0003
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.00017
+       }
+      }
+     },
+     "video-download": {
+      "eventTitle": "Add-on: video download",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0013
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0008
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0006
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0003
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.00017
+       }
+      }
+     },
+     "comment-dataset-item": {
+      "eventTitle": "Add-on: Comment",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.00125
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.00075
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0005
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0003
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.00015
+       }
+      }
+     },
+     "scrape-as-in-country": {
+      "eventTitle": "Add-on: Scrape as in country",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0013
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0008
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0006
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0003
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.00017
+       }
+      }
+     },
+     "transcription-minute": {
+      "eventTitle": "Add-on: Transcript",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.048
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.041
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.034
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.027
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.02
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.015
+       }
+      }
+     },
+     "ai-video-description": {
+      "eventTitle": "Add-on: AI Description",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0013
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0008
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0006
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0003
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.0002
+       }
+      }
+     },
+     "ai-video-summary": {
+      "eventTitle": "Add-on: AI Summary",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0013
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0008
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0006
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0003
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.0002
+       }
+      }
+     },
+     "actor-start": {
+      "eventTitle": "Actor start",
+      "isOneTimeEvent": true,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.001
+       }
+      }
+     }
+    }
+   },
+   "createdAt": "2026-08-18T07:19:07.761Z",
+   "startedAt": "2026-08-18T07:19:07.761Z",
+   "apifyMarginPercentage": 0.2,
+   "notifiedAboutChangeAt": "2026-08-19T08:06:30.611Z"
+  },
+  "id": "GdWCkxBtKWOsKjdch",
+  "url": "https://apify.com/clockworks/tiktok-scraper"
+ },
+ {
+  "title": "YouTube Scraper",
+  "name": "youtube-scraper",
+  "username": "streamers",
+  "stats": {
+   "totalBuilds": 1645,
+   "totalRuns": 31973999,
+   "totalUsers": 204844,
+   "totalUsers7Days": 7753,
+   "totalUsers30Days": 17312,
+   "totalUsers90Days": 27922,
+   "lastRunStartedAt": "2026-11-10T16:30:35.942Z",
+   "publicActorRunStats30Days": {
+    "ABORTED": 5967,
+    "FAILED": 12803,
+    "SUCCEEDED": 2940963,
+    "TIMED-OUT": 11857,
+    "TOTAL": 2971590
+   },
+   "actorReviewCount": 198,
+   "actorReviewRating": 4.057771946221697,
+   "bookmarkCount": 2142
+  },
+  "description": "YouTube crawler and video scraper. Alternative YouTube API with no limits or quo",
+  "categories": [
+   "VIDEOS",
+   "SOCIAL_MEDIA"
+  ],
+  "notice": "NONE",
+  "bookmarkCount": 2142,
+  "actorReviewRating": 4.057771946221697,
+  "actorReviewCount": 198,
+  "badge": null,
+  "isWhiteListedForAgenticPayments": true,
+  "currentPricingInfo": {
+   "minimalMaxTotalChargeUsd": null,
+   "pricingModel": "PAY_PER_EVENT",
+   "isPriceChangeNotificationSuppressed": true,
+   "pricingPerEvent": {
+    "actorChargeEvents": {
+     "result": {
+      "eventTitle": "Video",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.004
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.003
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0026
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0024
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0015
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.001
+       }
+      },
+      "isPrimaryEvent": true
+     },
+     "date-filter": {
+      "eventTitle": "Add-on: Date range for channels",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0013
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0008
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0006
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0003
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.00017
+       }
+      }
+     },
+     "ai-video-description": {
+      "eventTitle": "Add-on: AI description",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.015
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.01
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0085
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.007
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0043
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.0021
+       }
+      }
+     },
+     "ai-video-summary": {
+      "eventTitle": "Add-on: AI summary",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.015
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.01
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0085
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.007
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0043
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.0021
+       }
+      }
+     },
+     "transcribeMinute": {
+      "eventTitle": "Add-on: Transcript minute",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.048
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.041
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.033
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.027
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.02
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.015
+       }
+      }
+     }
+    }
+   },
+   "createdAt": "2026-09-02T13:52:04.236Z",
+   "startedAt": "2026-09-02T13:52:04.236Z",
+   "apifyMarginPercentage": 0.2
+  },
+  "id": "h7sDV53CddomktSi5",
+  "url": "https://apify.com/streamers/youtube-scraper"
+ },
+ {
+  "title": "Instagram Reel Scraper",
+  "name": "instagram-reel-scraper",
+  "username": "apify",
+  "stats": {
+   "totalBuilds": 3700,
+   "totalRuns": 23149066,
+   "totalUsers": 191465,
+   "totalUsers7Days": 12204,
+   "totalUsers30Days": 25645,
+   "totalUsers90Days": 36792,
+   "lastRunStartedAt": "2026-11-10T17:52:18.256Z",
+   "totalMetamorphs": 485,
+   "publicActorRunStats30Days": {
+    "ABORTED": 2054,
+    "FAILED": 217,
+    "SUCCEEDED": 4083003,
+    "TIMED-OUT": 3770,
+    "TOTAL": 4089044
+   },
+   "actorReviewCount": 102,
+   "actorReviewRating": 4.393739564499951,
+   "bookmarkCount": 1760
+  },
+  "description": "Scrape or download Instagram reels. Just add Instagram profile or reel URL, and ",
+  "categories": [
+   "SOCIAL_MEDIA",
+   "VIDEOS"
+  ],
+  "notice": "NONE",
+  "bookmarkCount": 1760,
+  "actorReviewRating": 4.393739564499951,
+  "actorReviewCount": 102,
+  "badge": null,
+  "isWhiteListedForAgenticPayments": true,
+  "currentPricingInfo": {
+   "minimalMaxTotalChargeUsd": 0.0073,
+   "pricingModel": "PAY_PER_EVENT",
+   "isPriceChangeNotificationSuppressed": true,
+   "pricingPerEvent": {
+    "actorChargeEvents": {
+     "reel": {
+      "eventTitle": "Reel",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.0026
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.0023
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0014
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0008
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.0004
+       }
+      },
+      "isPrimaryEvent": true
+     },
+     "actor-start": {
+      "eventTitle": "Actor start",
+      "isOneTimeEvent": true,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.001
+       }
+      }
+     },
+     "shares-count": {
+      "eventTitle": "Add-on: Shares count",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.007
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.006
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.005
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.004
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.003
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.002
+       }
+      }
+     },
+     "transcript": {
+      "eventTitle": "Add-on: Transcript",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.048
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.041
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.034
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.027
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.016
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.01
+       }
+      }
+     },
+     "video-download": {
+      "eventTitle": "Add-on: Video download",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.02
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.015
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.012
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.01
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0085
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.007
+       }
+      }
+     }
+    }
+   },
+   "createdAt": "2026-03-11T14:56:04.494Z",
+   "startedAt": "2026-03-11T14:56:04.494Z",
+   "apifyMarginPercentage": 0.2
+  },
+  "id": "xMc5Ga1oCONPmWJIa",
+  "url": "https://apify.com/apify/instagram-reel-scraper"
+ },
+ {
+  "title": "Web Scraper",
+  "name": "web-scraper",
+  "username": "apify",
+  "stats": {
+   "totalBuilds": 171,
+   "totalRuns": 181975557,
+   "totalUsers": 126913,
+   "lastRunStartedAt": "2026-11-10T10:40:47.376Z",
+   "totalMetamorphs": 309124,
+   "totalUsers30Days": 1334,
+   "totalUsers7Days": 746,
+   "totalUsers90Days": 2757,
+   "publicActorRunStats30Days": {
+    "ABORTED": 1285,
+    "FAILED": 2982,
+    "SUCCEEDED": 278795,
+    "TIMED-OUT": 2174,
+    "TOTAL": 285236
+   },
+   "actorReviewCount": 100,
+   "actorReviewRating": 4.711523842603476,
+   "bookmarkCount": 1405
+  },
+  "description": "Crawls arbitrary websites using a web browser and extracts structured data from ",
+  "categories": [
+   "DEVELOPER_TOOLS",
+   "OPEN_SOURCE"
+  ],
+  "notice": "NONE",
+  "bookmarkCount": 1405,
+  "actorReviewRating": 4.711523842603476,
+  "actorReviewCount": 100,
+  "badge": null,
+  "isWhiteListedForAgenticPayments": false,
+  "currentPricingInfo": {
+   "pricingModel": "FREE"
+  },
+  "id": "moJRLRc85AitArpNN",
+  "url": "https://apify.com/apify/web-scraper"
+ },
+ {
+  "title": "✨Mass Linkedin Profile Scraper with Email 📧 (No Cookies)",
+  "name": "Linkedin-Profile-Scraper",
+  "username": "dev_fusion",
+  "stats": {
+   "totalBuilds": 135,
+   "totalRuns": 27084423,
+   "totalUsers": 63899,
+   "totalUsers7Days": 549,
+   "totalUsers30Days": 941,
+   "totalUsers90Days": 2010,
+   "lastRunStartedAt": "2026-11-10T10:20:37.751Z",
+   "publicActorRunStats30Days": {
+    "ABORTED": 22,
+    "FAILED": 9,
+    "SUCCEEDED": 1022543,
+    "TIMED-OUT": 7126,
+    "TOTAL": 1029700
+   },
+   "actorReviewCount": 156,
+   "actorReviewRating": 2.98678609254713,
+   "bookmarkCount": 1713
+  },
+  "description": "🚀 Extract full LinkedIn profile insights: verified email 📧, phone number 📞, work",
+  "categories": [
+   "LEAD_GENERATION"
+  ],
+  "notice": "NONE",
+  "bookmarkCount": 1713,
+  "actorReviewRating": 2.98678609254713,
+  "actorReviewCount": 156,
+  "badge": null,
+  "isWhiteListedForAgenticPayments": false,
+  "currentPricingInfo": {
+   "pricingModel": "PAY_PER_EVENT",
+   "createdAt": "2026-02-26T08:01:11.995Z",
+   "startedAt": "2026-02-26T08:01:11.995Z",
+   "apifyMarginPercentage": 0.2,
+   "isPriceChangeNotificationSuppressed": true,
+   "reasonForChange": "Migration from Pay Per Result to Pay Per Event with apify-default-dataset-item event",
+   "pricingPerEvent": {
+    "actorChargeEvents": {
+     "apify-default-dataset-item": {
+      "eventTitle": "result",
+      "isPrimaryEvent": true,
+      "eventPriceUsd": 0.01
+     }
+    }
+   },
+   "forceContainsSignificantPriceChange": false
+  },
+  "id": "2SyF0bVxmgGr8IVCZ",
+  "url": "https://apify.com/dev_fusion/linkedin-profile-scraper"
+ },
+ {
+  "title": "Facebook Ad Library Scraper",
+  "name": "facebook-ads-library-scraper",
+  "username": "curious_coder",
+  "stats": {
+   "totalBuilds": 310,
+   "totalRuns": 22993517,
+   "totalUsers": 51944,
+   "totalUsers7Days": 4731,
+   "totalUsers30Days": 9653,
+   "totalUsers90Days": 14850,
+   "lastRunStartedAt": "2026-11-10T10:20:39.203Z",
+   "totalMetamorphs": 1,
+   "publicActorRunStats30Days": {
+    "ABORTED": 1738,
+    "FAILED": 719,
+    "SUCCEEDED": 2215861,
+    "TIMED-OUT": 1960,
+    "TOTAL": 2220278
+   },
+   "actorReviewCount": 114,
+   "actorReviewRating": 4.804043053432796,
+   "bookmarkCount": 990
+  },
+  "description": "Scrape ads from facebook ads library search results and facebook pages. Cost: $0",
+  "categories": [
+   "SOCIAL_MEDIA",
+   "LEAD_GENERATION",
+   "ECOMMERCE"
+  ],
+  "notice": "NONE",
+  "bookmarkCount": 990,
+  "actorReviewRating": 4.804043053432796,
+  "actorReviewCount": 114,
+  "badge": null,
+  "isWhiteListedForAgenticPayments": true,
+  "currentPricingInfo": {
+   "minimalMaxTotalChargeUsd": 0.00075,
+   "pricingModel": "PAY_PER_EVENT",
+   "isPriceChangeNotificationSuppressed": false,
+   "reasonForChange": "No significant change. Just a small charge per run of $0.00005 or $0.05 per 1000 runs",
+   "pricingPerEvent": {
+    "actorChargeEvents": {
+     "apify-default-dataset-item": {
+      "eventTitle": "ad",
+      "isOneTimeEvent": false,
+      "eventPriceUsd": 0.00075,
+      "isPrimaryEvent": true
+     },
+     "apify-actor-start": {
+      "eventTitle": "Actor Start",
+      "isOneTimeEvent": true,
+      "eventPriceUsd": 5e-05
+     }
+    }
+   },
+   "startedAt": "2026-08-14T03:18:51.036Z",
+   "createdAt": "2026-07-31T03:18:51.563Z",
+   "apifyMarginPercentage": 0.2,
+   "notifiedAboutFutureChangeAt": "2026-07-31T03:20:33.225Z",
+   "notifiedAboutChangeAt": "2026-08-19T08:06:18.488Z"
+  },
+  "id": "XtaWFhbtfxyzqrFmd",
+  "url": "https://apify.com/curious_coder/facebook-ads-library-scraper"
+ },
+ {
+  "title": "Backlink Building Agent",
+  "name": "backlink-building-agent",
+  "username": "daniil.poletaev",
+  "stats": {
+   "totalBuilds": 24,
+   "totalRuns": 40014,
+   "totalUsers": 503,
+   "totalUsers7Days": 1,
+   "totalUsers30Days": 3,
+   "totalUsers90Days": 9,
+   "lastRunStartedAt": "2026-11-10T05:05:01.938Z",
+   "publicActorRunStats30Days": {
+    "ABORTED": 0,
+    "FAILED": 38,
+    "SUCCEEDED": 0,
+    "TIMED-OUT": 0,
+    "TOTAL": 38
+   },
+   "actorReviewCount": 0,
+   "actorReviewRating": 0,
+   "bookmarkCount": 96
+  },
+  "description": "The Backlink Building Agent automates backlink outreach by finding relevant page",
+  "categories": [
+   "AI",
+   "OPEN_SOURCE",
+   "AGENTS"
+  ],
+  "notice": "NONE",
+  "bookmarkCount": 96,
+  "actorReviewRating": 0,
+  "actorReviewCount": 0,
+  "badge": null,
+  "isWhiteListedForAgenticPayments": true,
+  "currentPricingInfo": {
+   "pricingModel": "PAY_PER_EVENT",
+   "reasonForChange": "Decreased the minimum max cost per run",
+   "pricingPerEvent": {
+    "actorChargeEvents": {
+     "prepared-outreach": {
+      "eventTitle": "Price per piece of engagement created",
+      "eventPriceUsd": 0.05,
+      "isPrimaryEvent": true
+     }
+    }
+   },
+   "minimalMaxTotalChargeUsd": null,
+   "createdAt": "2025-08-21T17:28:10.952Z",
+   "startedAt": "2025-08-21T17:28:10.952Z",
+   "apifyMarginPercentage": 0.2,
+   "notifiedAboutChangeAt": "2025-02-27T08:09:20.293Z"
+  },
+  "id": "AN2w2qTGD470ONVd4",
+  "url": "https://apify.com/daniil.poletaev/backlink-building-agent"
+ },
+ {
+  "title": "Google Hotels Scraper - Prices, OTA Rates, Room Rates & Reviews",
+  "name": "google-hotels-scraper",
+  "username": "factden",
+  "stats": {
+   "totalBuilds": 49,
+   "totalRuns": 11503,
+   "totalUsers": 166,
+   "totalUsers7Days": 16,
+   "totalUsers30Days": 55,
+   "totalUsers90Days": 97,
+   "lastRunStartedAt": "2026-11-10T12:30:07.567Z",
+   "actorReviewCount": 5,
+   "actorReviewRating": 5,
+   "bookmarkCount": 19,
+   "publicActorRunStats30Days": {
+    "ABORTED": 34,
+    "FAILED": 0,
+    "SUCCEEDED": 6822,
+    "TIMED-OUT": 0,
+    "TOTAL": 6856
+   }
+  },
+  "description": "Scrape Google Hotels for any destination and dates: live per-night prices, the f",
+  "categories": [
+   "TRAVEL",
+   "BUSINESS",
+   "AI"
+  ],
+  "notice": "NONE",
+  "bookmarkCount": 19,
+  "actorReviewRating": 5,
+  "actorReviewCount": 5,
+  "badge": "risingStar",
+  "isWhiteListedForAgenticPayments": true,
+  "currentPricingInfo": {
+   "minimalMaxTotalChargeUsd": null,
+   "pricingModel": "PAY_PER_EVENT",
+   "isPriceChangeNotificationSuppressed": false,
+   "pricingPerEvent": {
+    "actorChargeEvents": {
+     "apify-default-dataset-item": {
+      "eventTitle": "Hotel",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.004
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.0037
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0035
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0032
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0032
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.0032
+       }
+      },
+      "isPrimaryEvent": true
+     },
+     "prices": {
+      "eventTitle": "Prices fetched",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.005
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.0047
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0044
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.0041
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.0041
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.0041
+       }
+      }
+     },
+     "review": {
+      "eventTitle": "Review scraped",
+      "isOneTimeEvent": false,
+      "eventTieredPricingUsd": {
+       "FREE": {
+        "tieredEventPriceUsd": 0.001
+       },
+       "BRONZE": {
+        "tieredEventPriceUsd": 0.00095
+       },
+       "SILVER": {
+        "tieredEventPriceUsd": 0.0009
+       },
+       "GOLD": {
+        "tieredEventPriceUsd": 0.00085
+       },
+       "PLATINUM": {
+        "tieredEventPriceUsd": 0.00085
+       },
+       "DIAMOND": {
+        "tieredEventPriceUsd": 0.00085
+       }
+      }
+     }
+    }
+   },
+   "startedAt": "2026-08-14T05:07:03.069Z",
+   "createdAt": "2026-08-14T05:07:03.521Z",
+   "apifyMarginPercentage": 0.2
+  },
+  "id": "DgcmKBGb3DTwI6ZEi",
+  "url": "https://apify.com/factden/google-hotels-scraper"
+ }
+]

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Generated locally; in CI `data/` is the checked-out `data` branch and `site/` is deployed to Pages.
+/data/
+/site/
